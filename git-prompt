@@ -27,7 +27,8 @@ if git_error_msg==0:
 		if match.group('both') is not None:
 			status = " *^"
 
-	status = " " + status
+	if status!="":
+		status = " " + status
 	sys.stdout.write( "({branch}{status}) ".format(branch=branch,status=status) )
 else:
 	sys.stdout.write("")
