@@ -9,10 +9,11 @@
 source ~/.bash_configs
 
 ## Aliases
-source ~/.aliases
+source ~/DotFiles/.aliases.sh
+
 
 
 #PS1='\W \033[32m\$\033[0m\033[?25h '
-PS1='\W/ '
+PS1='\W '
 PS1+='$($HOME/DotFiles/git-prompt)'
 PS1+='\[\033[1m\033[32m\]\$\[\033[0m\033[?25h\] '
