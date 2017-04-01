@@ -1,7 +1,10 @@
 #!/bin/bash
 
 # aliases
-  alias more='less' # minimalism anyone?
+  alias more='less' # nihilism
+  alias matrix='cmatrix -b'
+  alias restart='shutdown -r'
+  alias b="cd .."
   alias ls='ls --color=auto'
   alias feh='feh --bg-fill'
   alias pamac='pamac-manager'
@@ -18,3 +21,4 @@
   # git
   alias gits='git status -sb'
   alias gaa='git add --all'
+  alias clock='tty-clock -cB -C 4'

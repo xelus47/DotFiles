@@ -1,0 +1,26 @@
+[global_config]
+  title_transmit_bg_color = "#d30102"
+  suppress_multiple_term_dialog = True
+  focus = system
+  tab_position = bottom
+[keybindings]
+  full_screen = F11
+[profiles]
+  [[default]]
+  	scrollbar_position = hidden
+  	copy_on_selection = True
+  	background_image = None
+  	background_darkness = 0.68
+  	background_type = transparent
+  	cursor_color = "#3f51b5"
+  	foreground_color = "#dcdcdc"
+  	icon_bell = False
+  	show_titlebar = False
+  	#cursor_shape = ibeam
+  	#background_color = "#3f3f3f"
+  	scrollback_infinite = True
+  	use_system_font = False
+  	font = Ubuntu Mono 13
+  	mouse_autohide = True
+[layouts]
+[plugins]

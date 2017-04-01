@@ -1,0 +1,49 @@
+[options]
+font = Monospace 12
+font = Droid Sans Mono 12
+font = Source code pro 12
+#font = Inconsolata 16
+
+[colors]
+foreground = #dcdccc
+background = rgba(0, 0, 0, 0.7)
+
+[colors]
+
+# special
+foreground      = #c5c8c6
+foreground_bold = #c5c8c6
+cursor          = #c5c8c6
+background      = rgba(30,36,36,0.8)
+
+# black
+color0  = #282a2e
+color8  = #373b41
+
+# red
+color1  = #a64242
+color9  = #cc6666
+
+# green
+color2  = #728f56
+color10 = #9bba7d
+
+# yellow
+color3  = #d9b162
+color11 = #f0bd5d
+
+# blue
+color4  = #565f8f
+color12 = #7d7dba
+
+# magenta
+color5  = #87568f
+color13 = #b17dba
+
+# cyan
+color6  = #56858f
+color14 = #7db0ba
+
+# white
+color7  = #707880
+color15 = #c5c8c6
