@@ -1,4 +1,5 @@
-# DotFiles
+# DotFiles-spacious
+Backup before going full cyber autist on ~/DotFiles
 
 ### Todo
 - add config for git-prompt

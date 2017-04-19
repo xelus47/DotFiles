@@ -2,6 +2,7 @@
 
 # aliases
   alias more='less' # nihilism
+  alias tree='tree -Ch'
   alias matrix='cmatrix -b'
   alias restart='shutdown -r'
   alias b="cd .."

@@ -1,0 +1,6 @@
+- clean up i3 config
+- create proper namings for scripts
+- get some dank wallpapers
+- play around with terminal colours
+- find the perfect terminal font
+- rofi styling

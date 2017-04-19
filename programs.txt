@@ -1,0 +1,15 @@
+i3-gaps (AUR)
+compton
+maim
+rhythmbox
+ranger
+xrandr
+SoX (for playing clips from terminal)
+irssi
+qutebrowser
+w3m
+sublime-text-dev (AUR)
+mumble
+rofi
+texmaker
+libreoffice

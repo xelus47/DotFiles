@@ -72,7 +72,6 @@
 
 
 # Program-related bindings
-  # bindsym $mod+d exec ~/.config/i3/exec-rofi
   bindsym $mod+Return exec termite
   bindsym $mod+l exec dm-tool lock
 
@@ -95,11 +94,11 @@
 
   set $workspace1 "1 www"
   set $workspace2 "2 >_"
-  set $workspace3 "3 work"
-  set $workspace4 "4"
+  set $workspace3 "3 edit"
+  set $workspace4 "4 irc"
   set $workspace5 "5"
   set $workspace6 "6"
-  set $workspace7 "7 irc"
+  set $workspace7 "7 dl"
   set $workspace8 "8 vpn"
   set $workspace9 "9 vlc"
   set $workspace10 "10 rhythmbox"
@@ -274,8 +273,8 @@
                   -hlfg "#ffffff" -hlfg-active "#ffffff" -hlfg-urgent "#ffffff" \
                     -bc "#333333"
 
-  #bindsym $mod+d exec --no-startup-id rofi -show run $rofi_options -lines 5
-  bindsym $mod+d exec --no-startup-id dmenu
+  bindsym $mod+d exec --no-startup-id rofi -show run $rofi_options -lines 5
+  #bindsym $mod+d exec --no-startup-id dmenu
 
 
 
@@ -332,11 +331,12 @@ set $n = #ff00ff # nothing
 
 
 # class                 border   backgr. text    indicator child_border
-client.focused          #ff00ff  #ff00ff #ffffff #728f56   #a64242
+client.focused          #ff00ff  #ff00ff #ffffff #728f56   #397c8f
 client.focused_inactive #ff00ff  #ff00ff #ffffff #728f56   #282a2e
 client.unfocused        #ff00ff  #ff00ff #888888 #728f56   #282a2e
 client.urgent           #ff00ff  #ff00ff #ffffff #728f56   #900000
 
+# TODO: WTF is going on!?!?!?
 
 
 
