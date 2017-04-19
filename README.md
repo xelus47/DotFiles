@@ -33,19 +33,19 @@ show up in `nautilus` the file explorer. How you install
 this part is up to you. If you're me reading this, then the
 the answer is almost always yes.
 ```bash
-~ $ rm -r ~/.config/gtk-3.0 & ln -s ~/DotFiles/config/gtk-3.0 ~/.config/
+~ $ rm -r .config/gtk-3.0 & ln -s DotFiles/config/gtk-3.0 ~/.config/
 
 # link rc files
-~ $ rm ~/.vimrc
-~ $ rm ~/.bashrc
+~ $ rm .vimrc
+~ $ rm .bashrc
 ~ $ ln -s DotFiles/.bashrc .
 ~ $ ln -s DotFiles/.vimrc .
 
 # link config files
 ~ $ rm .config/i3/config
 ~ $ rm .config/termite/config 
-~ $ ln -s ~/DotFiles/config/i3 ~/.config/i3/config
-~ $ ln -s ~/DotFiles/config/gtk-3.0 ~/.config/termite/config
+~ $ ln -s DotFiles/config/i3 .config/i3/config
+~ $ ln -s DotFiles/config/gtk-3.0 .config/termite/config
 
 # link fonts
 ~ $ rm .fonts
