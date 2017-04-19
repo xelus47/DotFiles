@@ -1,6 +1,5 @@
 # DotFiles
 Setup your computer to look just as mine!
-![alt text](http://i.imgur.com/qX9zeq9.jpg "Logo Title Text 1")
 ## License
 My work is copyrighted under GNU GPL. You're free to run this code any way you like, and even to distribute or sell copies or modified versions of it, provided you do so under the same GNU license as well. To learn more about GNU and the Free Software movement, visit any of the links below:
 - GNU/linux OS: [gnu.org](https://www.gnu.org) 
@@ -64,3 +63,4 @@ the answer is almost always yes.
 - find the perfect terminal font
 - rofi styling
 - don't use vim, use emacs
+- add screenshot
