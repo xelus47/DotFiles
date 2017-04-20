@@ -31,7 +31,7 @@
   for_window [class="^.*"] border pixel 1 
 
 # Wallpaper
-  set $wallpaper "/home/alexander/Pictures/walls/space/wallpaper"
+  set $wallpaper "~/Dotfiles/Wallpapers/space/nebula*" # there is only one file that starts with "nebula", so feh can distinguish it
   exec_always feh --bg-fill $wallpaper
 
 # Monitor settings
