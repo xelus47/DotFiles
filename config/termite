@@ -1,8 +1,9 @@
 [options]
-font = Monospace 12
-font = Droid Sans Mono 12
+font = Droid Sans Mono 13
 font = Source code pro 12
-#font = Inconsolata 16
+font = Inconsolata 15
+# font = Monospace 12
+# font = ProFont 11
 
 [colors]
 foreground = #dcdccc
