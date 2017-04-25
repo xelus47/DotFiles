@@ -7,5 +7,5 @@ if [ $device != "pts" ]
 	then
 		printf '\e[30m\e[47m'
 		printf $device
-		printf '\e[0m'		
+		printf '\e[0m '		
 fi

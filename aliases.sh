@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # aliases
+  alias home='clear && cd'
   alias more='less' # nihilism
   alias tree='tree -Ch'
   alias matrix='cmatrix -b'

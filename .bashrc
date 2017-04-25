@@ -10,20 +10,35 @@ source ~/.bash_configs
 
 ## Aliases
 source ~/DotFiles/aliases.sh
+
+P_PS1=''
+P_PS1+="$($HOME/DotFiles/scripts/tty.sh)"
+P_PS1+="$($HOME/DotFiles/scripts/pwd.py)"
+P_PS1+=' $'
+export P_PS1
+
+length=${#P_PS1}
+
+
 PS1=''
 PS1+='\[\e[0m\]'               # clear styling (from possible stdout from before PS1)
-PS1+='\e[47m'			# below: various status messages
-# PS1+='\A'			# time
 
-_tty="$(tty)"
-device=$(echo $_tty| cut -d'/' -f 3)
-if [ $device != "pts" ]
-	then
-		PS1+='\l'	# show ttyn (unless it's /dev/pts/n)
-fi
-PS1+='\e[0m'
-PS1+='\e[1m\e[36m\w\e[0m '           # full path name
-PS1+='$($HOME/DotFiles/scripts/git-prompt.py)'  # git information
-PS1+='\n'
-PS1+='\W '               # shorthand directory
-PS1+='\[\033[1m\033[32m\]\$\[\033[0m\033[?25h\] '
+PS1+='$($HOME/DotFiles/scripts/tty.sh)' 	# show tty message
+PS1+='\[\e[1m\e[34m\]'
+	PS1+='$($HOME/DotFiles/scripts/pwd.py)'
+PS1+='\[\e[0m '
+PS1+='\e[33m\]' # yellow
+	PS1+='$($HOME/DotFiles/scripts/git-prompt.py)'  # git information
+PS1+='\[\e[0m\]'
+# if [ $length -ge 300 ]
+# then
+# PS1+='\n'
+# PS1+='$($HOME/DotFiles/scripts/pwd.py -bs) '  # dir basename
+# fi
+PS1+='\[\e[1m\e[32m\]'
+	PS1+='\$'
+PS1+='\[\e[0m'
+PS1+='\e[?25h\] '
+
+
+

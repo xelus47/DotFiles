@@ -1,9 +1,11 @@
 [options]
 font = Droid Sans Mono 13
 font = Source code pro 12
-font = Inconsolata 15
+font = Inconsolata 14
 # font = Monospace 12
-# font = ProFont 11
+# font = ProFont 12
+# font = Courier 12
+# font = Px437_IBM_VGA8 12
 
 [colors]
 foreground = #dcdccc

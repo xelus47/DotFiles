@@ -379,7 +379,7 @@ client.urgent           #ff00ff  #ff00ff #ffffff #728f56   #900000
 
 # Startup programs
   #exec hexchat
-  exec firefox
+  exec iceweasel 
   exec rhythmbox
 
 
