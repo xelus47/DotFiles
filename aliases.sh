@@ -20,6 +20,7 @@
   alias l.='ls -d .* --color=auto'
   alias la='ls -A'
   alias ll='ls -l --color=auto'
+  alias lal='ls -al'
   # git
   alias gits='git status -sb'
   alias gaa='git add --all'

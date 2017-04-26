@@ -132,8 +132,9 @@
 
 
 # Program workspaces
-  assign [class="Firefox"] $workspace1 
+  assign [class="Iceweasel"] $workspace1 
   assign [class="Vlc"] $workspace9 
+  assign [class="Totem"] $workspace9 
   assign [class="Rhythmbox"] $workspace10
   assign [class="Hexchat"] $workspace7
 
@@ -379,7 +380,7 @@ client.urgent           #ff00ff  #ff00ff #ffffff #728f56   #900000
 
 # Startup programs
   #exec hexchat
-  exec iceweasel 
+  #exec iceweasel 
   exec rhythmbox
 
 
