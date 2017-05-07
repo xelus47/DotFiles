@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # aliases
+  alias upgrade="sudo pacman -Syyu --ignore linux"
+  alias em="emacs -nw"
+  alias e="emacs -nw"
+  alias emacs="emacs -nw"
   alias home='clear && cd'
   alias more='less' # nihilism
   alias tree='tree -Ch'

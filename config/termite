@@ -1,7 +1,12 @@
 [options]
-font = Droid Sans Mono 13
-font = Source code pro 12
-font = Inconsolata 14
+# (from `man termite`)
+# Accepts block, ibeam and underline
+cursor_shape = block
+audible_bell = true
+
+#font = Droid Sans Mono 13
+#font = Source code pro 12
+#font = Inconsolata 14
 # font = Monospace 12
 # font = ProFont 12
 # font = Courier 12
@@ -17,7 +22,8 @@ background = rgba(0, 0, 0, 0.7)
 foreground      = #c5c8c6
 foreground_bold = #c5c8c6
 cursor          = #c5c8c6
-background      = rgba(20,22,26,0.8)
+background      = rgba(20,24,36,0.9)
+#background      = rgba(32,32,24,0.9)
 
 # black
 color0  = #282a2e
@@ -50,4 +56,5 @@ color14 = #57afba
 # white
 color7  = #707880
 color15 = #c5c8c6
+
 

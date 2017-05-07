@@ -1,0 +1,6 @@
+% egrep -v '^#' .ncmpcpp/config
+mpd_music_dir = "~/Music/"
+mpd_port = "6601"
+enable_window_title = "yes"
+song_columns_list_format = "(25)[cyan]{a} (40)[]{f} (30)[red]{b} (7f)[green]{l}"
+# mpd_playlist_dir = "~/Music/Playlist/"
