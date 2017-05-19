@@ -1,0 +1,14 @@
+#!/bin/bash
+
+tmux send -t irc:0.0 M-2
+tmux send -t irc:0.0 /wc
+tmux send -t irc:0.0 C-m
+
+# PPNL no nickserv
+#tmux send -t irc:0.1 M-2
+#tmux send -t irc:0.1 /wc
+#tmux send -t irc:0.1 C-m
+
+
+tmux selectp -t 0
+tmux kill-window -t $irc:1

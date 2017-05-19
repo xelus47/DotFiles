@@ -13,3 +13,9 @@ mumble
 rofi
 texmaker
 libreoffice
+emacs
+vim
+mpd
+mpc
+ncmpcpp
+tmux

@@ -8,6 +8,8 @@ My work is copyrighted under GNU GPL. You're free to run this code any way you l
 
 ## How to install
 
+WARNING: OUTDATED
+
 0. List of key programs
 - i3-gaps: fork of i3 (https://github.com/Airblader/i3)
 - compton: window compositor to make it look not ugly
