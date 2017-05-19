@@ -78,9 +78,9 @@
 
 
 # Volume and media bindings
-  bindsym XF86AudioRaiseVolume exec ~/DotFiles/python/i3/volume.py set-sink-volume 0 +5% #increase sound volume
-  bindsym XF86AudioLowerVolume exec ~/DotFiles/python/i3/volume.py set-sink-volume 0 -5% #decrease sound volume
-  bindsym XF86AudioMute exec ~/DotFiles/python/i3/volume.py set-sink-mute 0 toggle # mute sound
+  bindsym XF86AudioRaiseVolume exec ~/DotFiles/binds/volume.py set-sink-volume 0 +5% #increase sound volume
+  bindsym XF86AudioLowerVolume exec ~/DotFiles/binds/volume.py set-sink-volume 0 -5% #decrease sound volume
+  bindsym XF86AudioMute exec ~/DotFiles/binds/volume.py set-sink-mute 0 toggle # mute sound
   bindsym XF86AudioNext exec mpc --port 6601 next
   bindsym XF86AudioPrev exec mpc --port 6601 prev
   bindsym XF86AudioPlay exec ~/DotFiles/binds/mpc_toggle
@@ -95,9 +95,9 @@
     bindsym k exec mpd --kill
     bindsym Return exec termite -e ncmpcpp
 
-    bindsym XF86AudioRaiseVolume exec ~/DotFiles/python/i3/volume.py set-sink-volume 0 +5% #increase sound volume
-    bindsym XF86AudioLowerVolume exec ~/DotFiles/python/i3/volume.py set-sink-volume 0 -5% #decrease sound volume
-    bindsym XF86AudioMute exec ~/DotFiles/python/i3/volume.py set-sink-mute 0 toggle # mute sound
+    bindsym XF86AudioRaiseVolume exec ~/DotFiles/binds/volume.py set-sink-volume 0 +5% #increase sound volume
+    bindsym XF86AudioLowerVolume exec ~/DotFiles/binds/volume.py set-sink-volume 0 -5% #decrease sound volume
+    bindsym XF86AudioMute exec ~/DotFiles/binds/volume.py set-sink-mute 0 toggle # mute sound
     bindsym XF86AudioNext exec mpc --port 6601 next
     bindsym XF86AudioPrev exec mpc --port 6601 prev
     bindsym XF86AudioPlay exec ~/DotFiles/binds/mpc_toggle
