@@ -6,6 +6,7 @@ set nu
 syntax on
 set ruler
 set laststatus=2
+set autoread
 
 " keybinds
 nmap <tab><right> :tabn <CR>

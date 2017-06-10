@@ -1,5 +1,5 @@
 #!/usr/bin/python2
-
+# -*- coding: utf-8 -*-
 
 import sys,time,os,json, argparse, commands
 
@@ -50,11 +50,22 @@ def mpc_song():
 		except IndexError:
 			return ("","")
 
-def df(path='/home'):
+def df(path='/home',name=None):
 	s = commands.getoutput("df -BG -h %s"%path)
 	l = s.split('\n')[1]
 	p,used = (l.split()[-1], l.split()[3])
+	if name is not None:
+		p=name
 	return (p, used)
+
+
+def get_volume():
+	volume = commands.getoutput('cd ~/DotFiles/i3/bar && ./getvolume.sh')
+	muted = bool(int(commands.getoutput('cd ~/DotFiles/i3/bar && ./ismuted.py'))) # returns '0' or '1'
+	if muted:
+		return "<s>%s</s>"%volume
+	else:
+		return volume
 
 
 def build():
@@ -65,13 +76,14 @@ def build():
 
 	usage_home=i3block('%s <span foreground="#cc8811">%s</span>'%df('/home'))
 	usage_root=i3block('%s <span foreground="#cc8811">%s</span>'%df('/'))
+	usage_ext=i3block('%s <span foreground="#cc8811">%s</span>'%df('/dev/sdh1','/dev/sdh1'))
 
-	volume = i3block('<span weight="bold" foreground="#dd5555">%s</span>' % commands.getoutput('cd ~/DotFiles/i3/bar && ./getvolume.sh'))
+	volume = i3block(u'♪ <span weight="bold" foreground="#dd5555">%s</span>' % get_volume())
 	songdat=mpc_song()
 	if songdat[1]=='[paused]':
 		song = i3block(" <span color='#666'>[paused]</span> ")
 	elif songdat[0]=='':
-		song = i3block(" <span color='#666'><small>[dc]</small></span> ")
+		song = i3block(" <span color='#666'>[off]</span> ")
 	else:
 		song = i3block(' <i>%s</i> '% songdat[0])
 
@@ -80,6 +92,7 @@ def build():
 		volume.obj(),
 		usage_root.obj(),
 		usage_home.obj(),
+		usage_ext.obj(),
 		clock.obj(), 
 		]
 

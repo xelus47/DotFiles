@@ -165,10 +165,8 @@
 # Program workspaces
   assign [class="Iceweasel"] $workspace1 
   assign [class="Vlc"] $workspace9 
-  assign [class="Totem"] $workspace9 
  #assign [class="Rhythmbox"] $workspace10
-  assign [class="Hexchat"] $workspace7
-
+  assign [class="Transmission"] $workspace7
 
 
 
@@ -371,6 +369,19 @@ client.urgent           #ff00ff  #ff00ff #ffffff #728f56   #900000
 # TODO: WTF is going on!?!?!?
 
 
+#  bar {
+#    id test
+#    binding_mode_indicator no
+#    tray_output none
+#    i3bar_command i3bar -t
+#    status_command ~/DotFiles/i3/bar/status.py
+#    workspace_buttons no
+#    font pango:Cantarell 12
+#    colors {
+#      background #22334400
+#    }
+#  }
+
 
 # Bar
   bar {
@@ -389,10 +400,10 @@ client.urgent           #ff00ff  #ff00ff #ffffff #728f56   #900000
     #background "rgba(30,32,36,0.8)"
     colors {
       #separator #887711
-      background #222222
+      background #222222dd
       #statusline $base05
-#                        border  background text
-      #focused_workspace  $base01 $cback00   $base07
+      #                  border    background text
+      #focused_workspace  #2277aa00 #2270a000  #eeeeee
       #active_workspace   $base01 $base02    $base03
       #inactive_workspace $base01 $base01    $base03
       #urgent_workspace   $base01 $base01    $base08

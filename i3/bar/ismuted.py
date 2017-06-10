@@ -3,7 +3,7 @@
 def ismuted():
 	import sys, commands
 	status, response = commands.getstatusoutput('pactl list sinks|grep Mute:\ no')
-	return response==""
+	return int(response=="")
 
 
 if __name__=="__main__":
