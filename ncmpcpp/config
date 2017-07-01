@@ -2,7 +2,10 @@
 mpd_music_dir = "~/Music/"
 mpd_port = "6601"
 enable_window_title = "yes"
-song_columns_list_format = "(25)[cyan]{a} (40)[]{f} (30)[red]{b} (7f)[green]{l}"
+song_columns_list_format = "(25)[cyan]{aE} (40)[]{title} (30)[red]{bE} (7f)[green]{l}"
 # mpd_playlist_dir = "~/Music/Playlist/"
 
 song_status_format="{%t - %a {[%b]}}|{%f}"
+ignore_leading_the = yes
+ignore_diacritics = yes
+tags_separator = ";"

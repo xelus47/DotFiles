@@ -33,7 +33,7 @@
 # Wallpaper
 #  set $wallpaper '~/DotFiles/Wallpapers/space/nebula-blue.jpg'
 #  exec_always feh $wallpaper
-  exec ~/DotFiles/Wallpapers/wallpaper.sh
+  exec ~/DotFiles/i3/fehbg.sh
 
 # Monitor settings
   # one screen:
