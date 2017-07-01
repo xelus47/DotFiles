@@ -1,6 +1,0 @@
-<span foreground="#cc11aa">$(datetime)</span># ok!
-#df /dev/sdh1
-#df /home
-<span foreground="#cc8811">$(df /)</span>
-#volume
-#mpc_song
