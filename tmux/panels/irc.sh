@@ -5,7 +5,7 @@ sess_name='side-irc'
 tmux kill-session -t $sess_name
 
 # create session
-tmux new -d -c $HOME -s $sess_name 'exec irssi --connect=freenode'
+tmux new -d -c $HOME -s $sess_name 'exec irssi'
 tmux rename-window -t $sess_name:0 $sess_name
 tmux splitw -t $sess_name:0 -l 8 'exec htop'
 #tmux selectp -t 0

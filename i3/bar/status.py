@@ -1,7 +1,7 @@
 #!/usr/bin/python2
 # -*- coding: utf-8 -*-
 
-import sys,time,os,json, argparse, commands
+import threading,sys,time,os,json, argparse, commands
 
 from ismuted import ismuted
 
@@ -19,7 +19,7 @@ class i3block():
 		self.align=''
 		self.separator=''
 		self.separator_block_width=''
-		self.instance=str(long((time.time() + 0.5) * 100000))
+		#self.instance=str(long((time.time() + 0.5) * 100000))
 		self.instance=''
 		self._fields=['full_text','name','markup','urgent','instance',
 			'short_text','color','background','border','min_width',
@@ -71,7 +71,8 @@ def get_volume():
 def build():
 	
 	clock=i3block(time.strftime('  <span foreground="#cc11aa">%x</span>   <span foreground="#bbaacc"><big>%H:%M</big></span>  '))
-	
+	clock.name="clock"	
+
 	txt2=i3block('<span font_weight="bold" foreground="blue">Blue text</span> <i>is</i> cool! ')
 
 	usage_home=i3block('%s <span foreground="#cc8811">%s</span>'%df('/home'))
@@ -81,7 +82,7 @@ def build():
 	volume = i3block(u'♪ <span weight="bold" foreground="#dd5555">%s</span>' % get_volume())
 	songdat=mpc_song()
 	if songdat[1]=='[paused]':
-		song = i3block(" <span color='#666'>[paused]</span> ")
+		song = i3block(" <span color='#666'>[%s]</span> "%songdat[0])
 	elif songdat[0]=='':
 		song = i3block(" <span color='#666'>[off]</span> ")
 	else:
@@ -97,12 +98,12 @@ def build():
 		]
 
 
-
 if __name__=="__main__":
 	# TODO add argparse option for timeout between draws
 
+
 	#print( '{\"version": 1, "click_events": false}\n[\n[],')
-	print '{ "version": 1}'
+	print '{ "version": 1, "click_events": true}'
 	print '['
 	print '[],'	
 
@@ -111,5 +112,8 @@ if __name__=="__main__":
 	while True:
 		print json.dumps(build()) + ","
 		sys.stdout.flush()
+		#log = open('log.txt','w')
+		#log.write(sys.stdin.readline())
+		#log.close()
 		time.sleep(1)
 		

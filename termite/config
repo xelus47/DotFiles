@@ -1,13 +1,14 @@
 [options]
 # (from `man termite`)
 # Accepts block, ibeam and underline
-cursor_shape = block
+cursor_shape = underline
 audible_bell = true
 
 #font = Droid Sans Mono 13
 #font = Source code pro 12
 #font = Inconsolata 14
 font = Monospace 11
+# font = Terminus 12 # COOOOL!
 #font = ProFont 12
 # font = Courier 12
 # font = Px437_IBM_VGA8 12

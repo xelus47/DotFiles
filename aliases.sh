@@ -1,6 +1,10 @@
 #!/bin/bash
 
 # aliases
+  alias git-quick-fix='git add --all && git commit -m "quick fix"'
+  alias open='iceweasel'
+  alias yt-muse-dl='youtube-dl -x --add-metadata -o "~/Music/yt dl/%(title)s.%(ext)s" --metadata-from-title '
+  alias ping='grc ping'
   alias upgrade="sudo pacman -Syyu --ignore linux"
   alias em="emacs -nw"
   alias e="emacs -nw"

@@ -91,6 +91,7 @@
     bindsym Escape mode "default"
     bindsym Right exec mpc --port 6601 seek +10
     bindsym Left exec mpc --port 6601 seek -10
+    bindsym r exec "mpc --port 6601 seek 0"
     bindsym s exec mpd
     bindsym k exec mpd --kill
     bindsym Return exec termite -e ncmpcpp
